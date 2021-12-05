@@ -1,1 +1,17 @@
-* {background-color: red;}
+.divnav {
+  display: inline;
+}
+header {
+  text-align: center;
+  display: block;
+  height: 15%;
+  background-color: red;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+}
+.nav1 {
+    margin: 5% auto;
+    position: ;
+}
