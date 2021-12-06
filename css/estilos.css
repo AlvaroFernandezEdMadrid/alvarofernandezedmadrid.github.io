@@ -1,17 +1,120 @@
-.divnav {
-  display: inline;
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Brush Script MT", cursive;
 }
-header {
+body {
   text-align: center;
-  display: block;
-  height: 15%;
-  background-color: red;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  position: absolute;
 }
-.nav1 {
-    margin: 5% auto;
-    position: ;
+/*Encabezado*/
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #e93479;
+  position: fixed;
+  z-index: 5;
+}
+.nombreinicio {
+  width: 30%;
+  float: right;
+  line-height: 115px;
+}
+.nombreinicio a {
+  font-size: 50px;
+
+  text-decoration: none;
+}
+.nombreinicio a:hover {
+  color: #f9ac53;
+}
+.navheader {
+  float: left;
+  line-height: 100px;
+}
+.navheader a {
+  font-size: 30px;
+
+  text-decoration: none;
+  letter-spacing: 4px;
+  margin: 0 10px;
+}
+.navheader a:hover {
+  color: #f9ac53;
+}
+.navheader a::after {
+  content: " |";
+}
+.navheader a::before {
+  content: "| ";
+}
+/*Menu Navegacion*/
+.enlaces {
+  position: relative;
+  width: 100px;
+  height: 360px;
+  top: 250px;
+  background-color: #e93479;
+  border-radius: 50%;
+  z-index: 4;
+  left: 10px;
+}
+.enlaces img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin: 40px auto;
+  padding: 5px;
+}
+.enlaces li {
+  width: 50px;
+  height: 50px;
+  padding: 18px;
+  list-style: none;
+}
+.enlaces img:hover {
+  border: 1px solid #f9ac53;
+  border-radius: 30%;
+}
+/*Contenido*/
+article {
+  background-color: #300350;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  position: fixed;
+}
+.inicio p {
+  display: inline;
+  column-count: 3;
+}
+.inicio img {
+  height: 100px;
+  width: 100px;
+}
+/*Pie*/
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #e93479;
+  bottom: 0;
+  position: fixed;
+}
+footer p {
+  font-size: 20px;
+  display: inline;
+  line-height: 90px;
+}
+.nombrefooter {
+  float: left;
+  margin-left: 10px;
+}
+.fechafooter {
+  float: right;
+  margin-right: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
 }
