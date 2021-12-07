@@ -22,7 +22,6 @@ header {
 }
 .nombreinicio a {
   font-size: 50px;
-
   text-decoration: none;
 }
 .nombreinicio a:hover {
@@ -50,7 +49,7 @@ header {
 }
 /*Menu Navegacion*/
 .enlaces {
-  position: relative;
+  position: fixed;
   width: 100px;
   height: 360px;
   top: 250px;
@@ -62,7 +61,7 @@ header {
 .enlaces img {
   width: 50px;
   height: 50px;
-  display: flex;
+  position: static;
   margin: 40px auto;
   padding: 5px;
 }
@@ -72,33 +71,77 @@ header {
   padding: 18px;
   list-style: none;
 }
+
 .enlaces img:hover {
   border: 1px solid #f9ac53;
   border-radius: 30%;
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
 }
 /*Contenido*/
 article {
   background-color: #300350;
   z-index: 0;
   width: 100%;
-  height: 100%;
+  height: 1900px;
   top: 100px;
-  position: fixed;
+  position: absolute;
+}
+.trescolumnas {
+  columns: 3;
+}
+.trescolumnas li {
+  list-style-type: none;
 }
 .inicio p {
-  display: inline;
-  column-count: 3;
+  font-size: 32px;
 }
 .inicio img {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  padding-top: 30px;
+}
+.inicio h2 {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+/*th, td {
+  border: 2px solid red; Pruebas
+}*/
+.table1 {
+  border-spacing: 20px;
+  border-bottom: 2px solid white;
+}
+table {
+  text-align: left;
+  justify-content: center;
+  margin-top: 2%;
+  margin-right: 33%;
+  word-spacing: 5px;
+  margin-left: 500px;
+}
+table td {
+  font-family: "Georgia,serif";
+}
+.nombrecurr {
+  font-size: 32px;
+  line-height: 30px;
+}
+table img {
+  border-radius: 150px;
+}
+.secciones {
+  font-size: 25px;
+  font-weight: bolder;
 }
 /*Pie*/
 footer {
   width: 100%;
   height: 80px;
   background-color: #e93479;
-  bottom: 0;
+  bottom: 0px;
   position: fixed;
 }
 footer p {
