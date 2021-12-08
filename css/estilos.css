@@ -3,6 +3,7 @@
   padding: 0;
   color: white;
   font-family: "Brush Script MT", cursive;
+  letter-spacing: 1.5px;
 }
 body {
   text-align: center;
@@ -33,7 +34,6 @@ header {
 }
 .navheader a {
   font-size: 30px;
-
   text-decoration: none;
   letter-spacing: 4px;
   margin: 0 10px;
