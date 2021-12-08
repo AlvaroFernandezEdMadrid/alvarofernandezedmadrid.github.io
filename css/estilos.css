@@ -108,7 +108,8 @@ article {
   font-size: 60px;
 }
 /*th, td {
-  border: 2px solid red; Pruebas
+  border: 2px solid red; PRUEBAS 
+  border-collapse: collapse;  PRUEBAS
 }*/
 .table1 {
   border-spacing: 20px;
